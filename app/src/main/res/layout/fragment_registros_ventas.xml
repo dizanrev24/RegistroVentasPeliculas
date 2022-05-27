@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fond"
+    tools:context=".fragments.Registros_ventas">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/Registro_ventas_imagen"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:srcCompat="@mipmap/registro" />
+
+    <EditText
+        android:id="@+id/txtRegistro_venta_correo"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Registro_ventas_imagen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Correo"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/txtRegistro_venta_nombre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtRegistro_venta_correo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Nombre"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/txtRegistro_venta_apellido"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtRegistro_venta_nombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Apellido"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/txtRegistro_venta_direccion"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtRegistro_venta_apellido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Direccion"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/txtRegistro_venta_telefono"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtRegistro_venta_direccion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Telefono"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Spinner
+        android:id="@+id/txtRegistro_venta_pelicula"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtRegistro_venta_telefono"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Nombre de Pelicula" />
+
+    <EditText
+        android:id="@+id/txtRegistro_venta_cantidadpelicula"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtRegistro_venta_pelicula"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Cantidad Vendida"
+        android:inputType="number"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/txtRegistro_venta_preciopelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRegistro_venta_cantidadpelicula"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:hint="Precio"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/btnRegisto_venta_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRegistro_venta_preciopelicula"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        android:hint="Registrar" />
+
+
+</RelativeLayout>

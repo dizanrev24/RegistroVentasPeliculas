@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fond"
+    tools:context=".fragments.Registros_peliculas">
+
+    <ImageView
+        android:id="@+id/Registro_peliculas_imagen"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:padding="10dp"
+
+        app:srcCompat="@mipmap/peli" />
+
+    <EditText
+        android:id="@+id/txtRegistro_peliculas_codigo"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Registro_peliculas_imagen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Codigo"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/txtRegistro_peliculas_nombre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtRegistro_peliculas_codigo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Nombre Pelicula"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/txtRegistro_peliculas_precio"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtRegistro_peliculas_nombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Precio"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/txtRegistro_peliculas_cantidadexistente"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtRegistro_peliculas_precio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="En Existencia"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/btnRegisto_peliculas_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRegistro_peliculas_cantidadexistente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:backgroundTint="@color/teal_700"
+        android:hint="Registrar"
+        android:textColorHint="@color/white" />
+
+</RelativeLayout>
